@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Cuzungo - Sabores Auténticos de Ciénaga</title>
+    <!-- Meta tags para SEO -->
+    <meta name="description"
+        content="Sabor Cuzungo en Ciénaga, Magdalena. Especialistas en asados al carbón, sancochos tradicionales y comida de mar fresca. Consulta nuestra carta digital y pide a domicilio por WhatsApp.">
+    <meta name="keywords"
+        content="Restaurante Ciénaga, Sabor Cuzungo, Asados Ciénaga, Sancochos Ciénaga, Comida de Mar, Carta Cuzungo, Domicilios Ciénaga">
+    <!-- Google Fonts: Playfair Display para títulos, Outfit para cuerpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Hojas de Palmera Laterales (Apuntando hacia afuera) -->
+    <div class="parallax-palm left-palm left-palm-top" id="leftPalmTop">
+        <img src="assets/palm_right.png" alt="Palmera Izquierda Superior" class="palm-img">
+    </div>
+    <div class="parallax-palm left-palm left-palm-bottom" id="leftPalmBottom">
+        <img src="assets/palm_right.png" alt="Palmera Izquierda Inferior" class="palm-img">
+    </div>
+    <div class="parallax-palm right-palm right-palm-top" id="rightPalmTop">
+        <img src="assets/palm_left.png" alt="Palmera Derecha Superior" class="palm-img">
+    </div>
+    <div class="parallax-palm right-palm right-palm-bottom" id="rightPalmBottom">
+        <img src="assets/palm_left.png" alt="Palmera Derecha Inferior" class="palm-img">
+    </div>
+
+    <!-- Elementos Parallax de la Cultura Cienaguera -->
+    <div class="parallax-element cienaga-sombrero" id="cienagaSombrero">
+        <img src="assets/sombrero.png" alt="Sombrero Vueltiao" class="cienaga-img">
+    </div>
+    <div class="parallax-element cienaga-caiman" id="cienagaCaiman">
+        <img src="assets/caiman.png" alt="Caimán Cienaguero" class="cienaga-img">
+    </div>
+    <div class="parallax-element cienaga-prometeo" id="cienagaPrometeo">
+        <img src="assets/prometeo.png" alt="Prometeo de la Libertad" class="cienaga-img">
+    </div>
+    <div class="parallax-element cienaga-templete" id="cienagaTemplete">
+        <img src="assets/templete.png" alt="Templete de Ciénaga" class="cienaga-img">
+    </div>
+
+
+
+    <!-- HEADER -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#" class="logo-area">
+                <img src="assets/cuzungo_logo.png" alt="Sabor Cuzungo Logo" class="logo-img" id="headerLogo">
+                <div class="logo-text">
+                    <h1>Cuzungo</h1>
+                    <span>Restaurante & Sabores Auténticos</span>
+                </div>
+            </a>
+            <nav class="desktop-nav">
+                <a href="#menu-secciones" class="nav-link active">Menú</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <!-- Botón de cambio de tema en desktop -->
+                <button class="theme-toggle-btn" id="themeToggleBtnDesktop" aria-label="Cambiar Tema">
+                    <!-- Icono SVG inyectado dinámicamente -->
+                </button>
+                <button class="btn-ordenar" id="btnHeaderOrder">
+                    <span class="btn-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </span>
+                    <span class="btn-text">Ver Pedido</span>
+                    <span class="cart-badge-count" id="cartBadgeHeader">0</span>
+                </button>
+            </nav>
+            <div class="mobile-header-actions">
+                <!-- Botón de cambio de tema en móvil -->
+                <button class="theme-toggle-btn" id="themeToggleBtnMobile" aria-label="Cambiar Tema">
+                    <!-- Icono SVG inyectado dinámicamente -->
+                </button>
+                <button class="cart-toggle-btn" id="btnMobileCart" aria-label="Abrir Carrito">
+                    <span class="cart-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </span>
+                    <span class="cart-badge-count" id="cartBadgeMobile">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag">Sabor Tradicional</span>
+            <h2 class="hero-title">Sabores Auténticos de Ciénaga</h2>
+            <p class="hero-desc">Especialistas en asados al carbón, sancochos típicos en olla de barro y las delicias
+                más frescas del Mar Caribe.</p>
+            <div class="hero-buttons">
+                <a href="#menu-secciones" class="btn-primary">Ver la Carta</a>
+                <a href="#contacto" class="btn-secondary">Visítanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN MENU CONTAINER -->
+    <main class="menu-container">
+        <!-- BUSCADOR Y CATEGORÍAS -->
+        <div class="sticky-menu-nav" id="stickyMenuNav">
+            <div class="search-bar-wrapper">
+                <div class="search-input-container">
+                    <span class="search-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </span>
+                    <input type="text" id="searchInput"
+                        placeholder="¿Qué se te antoja hoy? (ej. Camarón, Filet, Mondongo...)">
+                    <button class="clear-search-btn" id="clearSearchBtn" style="display: none;">✕</button>
+                </div>
+            </div>
+
+            <div class="categories-carousel-container">
+                <button class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="Deslizar izquierda">❮</button>
+                <div class="categories-scroll-wrapper" id="categoriesScrollWrapper">
+                    <button class="category-tab active" data-category="entradas" id="tab-entradas">Entradas</button>
+                    <button class="category-tab" data-category="especiales" id="tab-especiales">Especiales</button>
+                    <button class="category-tab" data-category="mar" id="tab-mar">Del Mar</button>
+                    <button class="category-tab" data-category="cuzunguitos" id="tab-cuzunguitos">Cuzunguitos</button>
+                    <button class="category-tab" data-category="ejecutivo" id="tab-ejecutivo">Ejecutivo</button>
+                    <button class="category-tab" data-category="sancochos" id="tab-sancochos">Sancochos</button>
+                    <button class="category-tab" data-category="asados" id="tab-asados">Asados</button>
+                    <button class="category-tab" data-category="bebidas" id="tab-bebidas">Bebidas</button>
+                </div>
+                <button class="carousel-nav-btn next" id="carouselNextBtn" aria-label="Deslizar derecha">❯</button>
+            </div>
+            <!-- Indicador de Progreso del Scroll -->
+            <div class="scroll-progress-container">
+                <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+            </div>
+        </div>
+
+        <!-- CARTA DE PLATOS -->
+        <div id="menu-secciones" class="menu-sections-wrapper">
+            <!-- SECCIÓN 1: ENTRADAS -->
+            <section id="section-entradas" class="menu-section section-sand" data-category="entradas">
+                <div class="section-decorations">
+                    <div class="sand-starfish float-element-1"></div>
+                    <div class="sand-shell float-element-2"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">1.</span> Entradas</h3>
+                    <p class="section-subtitle">Para abrir el apetito con el toque caribeño</p>
+                </div>
+                <div class="dishes-grid" id="grid-entradas">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: ESPECIALES CUZUNGO -->
+            <section id="section-especiales" class="menu-section section-fire" data-category="especiales">
+                <div class="section-decorations">
+                    <div class="spark spark-1"></div>
+                    <div class="spark spark-2"></div>
+                    <div class="spark spark-3"></div>
+                    <div class="spark spark-4"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">2.</span> Especiales Cuzungo</h3>
+                    <p class="section-subtitle">Cortes finos seleccionados preparados por nuestros expertos</p>
+                </div>
+                <div class="dishes-grid" id="grid-especiales">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: CUZUNGOS DEL MAR -->
+            <section id="section-mar" class="menu-section section-sea" data-category="mar">
+                <div class="section-decorations">
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-3"></div>
+                    <div class="fish-swim"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">3.</span> Cuzungos del Mar</h3>
+                    <p class="section-subtitle">Delicias de nuestra costa, preparadas al instante</p>
+                </div>
+                <div class="dishes-grid" id="grid-mar">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: CUZUNGUITOS -->
+            <section id="section-cuzunguitos" class="menu-section section-sage" data-category="cuzunguitos">
+                <div class="section-decorations">
+                    <div class="leaf leaf-1"></div>
+                    <div class="leaf leaf-2"></div>
+                    <div class="leaf leaf-3"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">4.</span> Cuzunguitos</h3>
+                    <p class="section-subtitle">Platos deliciosos y balanceados perfectos para los más pequeños</p>
+                </div>
+                <div class="dishes-grid" id="grid-cuzunguitos">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: EJECUTIVO DEL DÍA -->
+            <section id="section-ejecutivo" class="menu-section section-cream" data-category="ejecutivo">
+                <div class="section-decorations">
+                    <div class="bokeh bokeh-1"></div>
+                    <div class="bokeh bokeh-2"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">5.</span> Ejecutivo del Día</h3>
+                    <p class="section-subtitle">Disponible de lunes a viernes - Sabor casero completo</p>
+                </div>
+                <div class="dishes-grid" id="grid-ejecutivo">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 6: SANCOCHOS -->
+            <section id="section-sancochos" class="menu-section section-soup" data-category="sancochos">
+                <div class="section-decorations">
+                    <div class="steam steam-1"></div>
+                    <div class="steam steam-2"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">6.</span> Sancochos</h3>
+                    <p class="section-subtitle">Nuestra especialidad en olla de barro, calientes y reconfortantes</p>
+                </div>
+                <div class="dishes-grid" id="grid-sancochos">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 7: ASADOS CUZUNGO -->
+            <section id="section-asados" class="menu-section section-ember" data-category="asados">
+                <div class="section-decorations">
+                    <div class="spark spark-1"></div>
+                    <div class="spark spark-2"></div>
+                    <div class="spark spark-3"></div>
+                    <div class="spark spark-4"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">7.</span> Asados Cuzungo</h3>
+                    <p class="section-subtitle">Carnes de primera al calor del carbón con el sazón de la casa</p>
+                </div>
+                <div class="dishes-grid" id="grid-asados">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+
+            <!-- SECCIÓN 8: BEBIDAS -->
+            <section id="section-bebidas" class="menu-section section-water" data-category="bebidas">
+                <div class="section-decorations">
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="ice-float ice-1"></div>
+                    <div class="ice-float ice-2"></div>
+                </div>
+                <div class="section-header">
+                    <h3 class="section-title"><span class="drop-cap-gold">8.</span> Bebidas</h3>
+                    <p class="section-subtitle">Jugos frescos y refrescantes para acompañar tus platos</p>
+                </div>
+                <div class="dishes-grid" id="grid-bebidas">
+                    <!-- Platos cargados dinámicamente -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER / SECCIÓN DE CONTACTO -->
+    <footer class="main-footer" id="contacto">
+        <div class="footer-top-decor"></div>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/cuzungo_logo.png" alt="Sabor Cuzungo Logo">
+                <h4>Sabor Cuzungo</h4>
+                <p class="footer-tagline">Restaurante & Sabores Auténticos</p>
+            </div>
+
+            <div class="footer-info-grid">
+                <div class="footer-info-card">
+                    <span class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </span>
+                    <h5>Nuestra Sazón</h5>
+                    <p>Especialistas en asados al carbón, sancochos tradicionales y exquisitos platos de comida de mar.
+                    </p>
+                </div>
+
+                <div class="footer-info-card">
+                    <span class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </span>
+                    <h5>Encuéntranos</h5>
+                    <p>Calle 12 con Carrera 15<br><strong>Ciénaga, Magdalena</strong></p>
+                </div>
+
+                <div class="footer-info-card">
+                    <span class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </span>
+                    <h5>Pide Domicilio</h5>
+                    <p class="phone-highlight">WhatsApp: 305 278 0809</p>
+                    <p class="sub-text">Servicio de almuerzos y carta completa todos los días.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61573407733481" target="_blank" class="social-link"
+                        aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/saborcuzungo/" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+                <p class="copyright">Cuzungo © 2026 | Sabores Auténticos. Ciénaga, Magdalena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CARRO DE PEDIDOS (DRAWER DESPLEGABLE) -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>Tu Pedido</h3>
+            <button class="close-drawer-btn" id="btnCloseCartDrawer" aria-label="Cerrar Carrito">✕</button>
+        </div>
+
+        <div class="cart-drawer-content">
+            <!-- LISTA DE PRODUCTOS EN EL CARRITO -->
+            <div class="cart-items-container" id="cartItemsContainer">
+                <div class="empty-cart-message" id="emptyCartMessage">
+                    <span class="empty-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                            <path d="M7 2v20"></path>
+                            <path d="M21 15V2v0a5 5 0 0 0-5 5v8c0 1.1.9 2 2 2h3Zm0 0v5"></path>
+                        </svg>
+                    </span>
+                    <p>Tu carrito está vacío</p>
+                    <small>¡Agrega algunas delicias de nuestra carta para empezar!</small>
+                </div>
+                <!-- Los elementos agregados se inyectarán aquí -->
+            </div>
+
+            <!-- DATOS DE ENTREGA Y PAGO -->
+            <div class="cart-checkout-form" id="cartCheckoutForm" style="display: none;">
+                <h4>Datos para el Domicilio</h4>
+                <div class="form-group">
+                    <label for="clientName">Nombre Completo *</label>
+                    <input type="text" id="clientName" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="clientAddress">Dirección en Ciénaga *</label>
+                    <input type="text" id="clientAddress" placeholder="Ej. Calle 12 Cra 15-20, Centro" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Método de Pago *</label>
+                    <select id="paymentMethod" required>
+                        <option value="" disabled selected>Selecciona tu pago</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Nequi">Nequi</option>
+                        <option value="Daviplata">Daviplata</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orderNotes">Notas adicionales</label>
+                    <textarea id="orderNotes"
+                        placeholder="Ej. Traer cambio de 50mil, sin cebolla la ensalada..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-drawer-footer" id="cartDrawerFooter" style="display: none;">
+            <div class="total-summary">
+                <span>Subtotal:</span>
+                <span class="total-price" id="cartTotalPrice">$0 COP</span>
+            </div>
+            <button class="btn-checkout" id="btnSendOrderWhatsApp">
+                <span class="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 2.17.7 4.19 1.89 5.83L2.61 22.38c-.12.4.24.76.64.64l4.55-1.28C9.44 22.4 10.69 23 12 23c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.23 0-2.39-.35-3.39-1l-.24-.14-2.52.71.71-2.52-.14-.24A7.95 7.95 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.47-5.83c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06a7.6 7.6 0 0 1-2.07-1.28 8.4 8.4 0 0 1-1.43-1.78c-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42s-.54-1.3-.74-1.78c-.2-.48-.42-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z" />
+                    </svg>
+                </span>
+                <span>Confirmar por WhatsApp</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL DE PERSONALIZACIÓN DE PLATO -->
+    <div class="dish-modal-overlay" id="dishModalOverlay">
+        <div class="dish-modal">
+            <button class="close-modal-btn" id="btnCloseDishModal">✕</button>
+            <div class="dish-modal-body">
+                <div class="dish-modal-img-wrapper" id="modalDishImgWrapper" style="display: none;">
+                    <img src="" alt="Imagen de plato" id="modalDishImg" class="modal-dish-img">
+                </div>
+                <div class="dish-modal-info">
+                    <h4 id="modalDishTitle" class="modal-dish-title">Plato de Ejemplo</h4>
+                    <span id="modalDishPrice" class="modal-dish-price">$0k</span>
+                    <p id="modalDishDesc" class="modal-dish-desc">Descripción detallada del plato.</p>
+                </div>
+
+                <!-- Opciones dinámicas según el plato -->
+                <div class="dish-options-container" id="modalOptionsContainer">
+                    <!-- Inyectado por JS -->
+                </div>
+            </div>
+            <div class="dish-modal-footer">
+                <div class="modal-qty-selector">
+                    <button class="qty-btn minus" id="modalQtyMinus">-</button>
+                    <span class="qty-val" id="modalQtyVal">1</span>
+                    <button class="qty-btn plus" id="modalQtyPlus">+</button>
+                </div>
+                <button class="btn-add-modal-cart" id="btnModalAddCart">
+                    Agregar al Pedido (<span id="modalTotalSum">$0</span>)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICACIÓN FLOTANTE -->
+    <div class="toast-notification" id="toastNotification">
+        <span class="toast-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </span>
+        <span class="toast-message">Plato agregado con éxito</span>
+    </div>
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="scroll-to-top-btn" id="scrollToTopBtn" aria-label="Volver arriba">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
